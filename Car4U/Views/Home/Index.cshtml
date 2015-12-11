@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="col-lg-12 col-sm-12">
-    <form class="home-box jumbotron " style="">
+<div class="col-lg-12 col-sm-12 form-horizontal">
+    <form class="home-box jumbotron">
         <label class="label-box" for="sel1">Local de entrega</label>
         <select name="PickUpLoc" class="form-control placeholder" id="sel1">
             <option value="" selected disabled>Escolha o local de entrega</option>
@@ -20,7 +20,22 @@
             <option value="exe4">Example4</option>
         </select>
         <label class="label-box" for="sel3">Idade do condutor</label>
-        <input name="driverAge" class="form-control input-size-xs" id="input1" placeholder="25-65 anos">
+        @*<input name="driverAge" class="form-control input-size-xs" id="input1" placeholder="25-65 anos">*@
+        <select id="age" class="form-control input-size-xs" name="age" required="">
+            <option value="">Por favor escolha...</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21-75" selected="">21-75</option>
+            <option value="76">76</option>
+            <option value="77">77</option>
+            <option value="78">78</option>
+            <option value="79">79</option>
+            <option value="80">80</option>
+        </select>
+
+
+
         <label class="label-box" for="sel3">Categoria do veículo</label>
         <select name="VehicleCat" class="form-control placeholder" id="sel3">
             <option value="" selected disabled>Escolha a categoria do veículo</option>
@@ -29,12 +44,12 @@
             <option value="exe3">Example3</option>
             <option value="exe4">Example4</option>
         </select>
-        <label class="label-box">Data\Hora entrega</label>
+        <label class="label-box">Data/Hora entrega</label>
         <div class="form-inline">
             <input type="date" class="form-control input-size-xs" />
             <input type="time" class="form-control input-size-xxs" />
         </div>
-        <label class="label-box">Dat\Hora recolha</label>
+        <label class="label-box">Data/Hora recolha</label>
         <div class="form-inline">
             <input type="date" class="form-control input-size-xs" />
             <input type="time" class="form-control input-size-xxs" />
@@ -42,10 +57,29 @@
         <button class="btn btn-secondary btn-sm subButton">Submeter</button>
 
     </form>
-        <div id="axis" class="one"> 
-            <img src="~/Content/Car4Ucar.fw.png" class="img-responsiveb object car move-right"/>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src="~/Content/Car4Ucar.fw.png" alt="Car4U"></div>
+            <div class="side back"><img src="~/Content/Car4Utext.fw.png" /></div>
+        </div>
+    </div>
+    @*<div id="axis" class="one">
+            <img src="~/Content/Car4Ucar.fw.png" class="img-responsiveb object car move-right" />
         </div>
         <div class="indexLogo">
             <img src="/Content/Car4Utext.fw.png" class="img-responsiveb" />
-        </div>
+            </div>*@
+</div>
+
+<div id="myCarousel" class="carousel container slide">
+    <div class="carousel-inner">
+        <div class="active item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+    </div>
+    <script type="text/javascript">
+          $(document).ready(function() {
+            $('.carousel').carousel({interval: 7000});
+          });
+    </script>
 </div>
