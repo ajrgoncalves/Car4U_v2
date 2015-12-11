@@ -35,10 +35,10 @@
 /*Button active 3d*/
 button {
   border: 0;
-  background: #0087cc;
+  background: #f9bf1d;
   border-radius: 4px;
-  box-shadow: 0 5px 0 #006599;
-  color: #fff;
+  box-shadow: 0 5px 0 black;
+  color: black;
   cursor: pointer;
   font: inherit;
   margin: 0;
@@ -49,7 +49,7 @@ button {
   margin-top:15px;
 }
 button:active {
-  box-shadow: 0 2px 0 #006599;
+  box-shadow: 0 2px 0 black;
   transform: translateY(3px);
 }
 /*end Button active 3d*/
@@ -105,6 +105,10 @@ button:active {
 /*end Image effect Index*/
 
 /*Background index slider*/
+.right.carousel-control, .left.carousel-control{
+    display:none;
+}
+
 .carousel { z-index: -99; } /* keeps this behind all content */
 .carousel .item {
     position: fixed; 
@@ -182,9 +186,9 @@ button:active {
 
 .subButton{
     float:right;
-    background-color:ActiveCaption;
     margin-top:10px;
-
+    background-color:#f9bf1d;
+    color:black;
 }
 
 /*Select disable text*/
