@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Car4U.Models.Reservation>
+@{
+    ViewBag.Title = "ResevationDetails";
+}
+
+<h2>ResevationDetails</h2>
+
+<panel>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    @Html.DisplayName("Reservation Number: ")
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+            </tr>
+        </table>
+    </div>
+</panel>

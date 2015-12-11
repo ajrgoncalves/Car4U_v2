@@ -1,2 +1,6 @@
-﻿body {
+﻿.neon-text{
+font: normal normal bold 15px/normal "Atomic Age", Helvetica, sans-serif;
+color: black;
+-o-text-overflow: clip;
+text-overflow: clip;
 }
