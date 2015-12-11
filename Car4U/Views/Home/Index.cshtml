@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="col-lg-12 col-sm-12">
+    <form class="home-box jumbotron " style="">
+        <label class="label-box" for="sel1">Local de entrega</label>
+        <select name="PickUpLoc" class="form-control placeholder" id="sel1">
+            <option value="" selected disabled>Escolha o local de entrega</option>
+            <option value="exe1">Example1</option>
+            <option value="exe2">Example2</option>
+            <option value="exe3">Example3</option>
+            <option value="exe4">Example4</option>
+        </select>
+        <label class="label-box" for="sel2">Local de Retorno</label>
+        <select name="ReturnLoc" class="form-control placeholder" id="sel2">
+            <option value="" selected disabled>Escolha o local de retorno</option>
+            <option value="exe1">Example1</option>
+            <option value="exe2">Example2</option>
+            <option value="exe3">Example3</option>
+            <option value="exe4">Example4</option>
+        </select>
+        <label class="label-box" for="sel3">Idade do condutor</label>
+        <input name="driverAge" class="form-control input-size-xs" id="input1" placeholder="25-65 anos">
+        <label class="label-box" for="sel3">Categoria do veículo</label>
+        <select name="VehicleCat" class="form-control placeholder" id="sel3">
+            <option value="" selected disabled>Escolha a categoria do veículo</option>
+            <option value="exe1">Example1</option>
+            <option value="exe2">Example2</option>
+            <option value="exe3">Example3</option>
+            <option value="exe4">Example4</option>
+        </select>
+        <label class="label-box">Data\Hora entrega</label>
+        <div class="form-inline">
+            <input type="date" class="form-control input-size-xs" />
+            <input type="time" class="form-control input-size-xxs" />
+        </div>
+        <label class="label-box">Dat\Hora recolha</label>
+        <div class="form-inline">
+            <input type="date" class="form-control input-size-xs" />
+            <input type="time" class="form-control input-size-xxs" />
+        </div>
+        <button class="btn btn-secondary btn-sm subButton">Submeter</button>
+
+    </form>
+        <div id="axis" class="one"> 
+            <img src="~/Content/Car4Ucar.fw.png" class="img-responsiveb object car move-right"/>
+        </div>
+        <div class="indexLogo">
+            <img src="/Content/Car4Utext.fw.png" class="img-responsiveb" />
+        </div>
+</div>

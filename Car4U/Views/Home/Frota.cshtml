@@ -1,0 +1,222 @@
+﻿
+@{
+    ViewBag.Title = "Frota";
+}
+
+@*<h2>Frota</h2>
+
+    <div class="row">
+            <section class="col-lg-12 cardetails">
+                <article class="col-lg-6">
+                    <div class="panel col-lg-4">
+                        <img src="~/Content/car1.png" />
+                        <div class="panel-footer">
+                        <p>Categoria x1</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="~/Content/car2.jpg" />
+                        <div class="panel-footer">
+                            <p>Categoria x2</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="~/Content/car3.jpg" />
+                        <div class="panel-footer">
+                            <p>Categoria x3</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="~/Content/car4.jpg" />
+                        <div class="panel-footer">
+                            <p>Categoria x4</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="#" />
+                        <div class="panel-footer">
+                            <p>Categoria x5</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="#" />
+                        <div class="panel-footer">
+                            <p>Categoria x6</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="#" />
+                        <div class="panel-footer">
+                            <p>Categoria x7</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="#" />
+                        <div class="panel-footer">
+                            <p>Categoria x8</p>
+                        </div>
+                    </div>
+
+                    <div class="panel col-lg-4">
+                        <img src="#" />
+                        <div class="panel-footer">
+                            <p>Categoria x9</p>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="col-lg-6">
+                    <div>
+                        <h3>Categoria clicada</h3>
+                        <img src="#" />
+                        <div class="row">
+                            <div><label>Nº de Portas</label><p>x portas</p></div>
+                            <div><label>Nº de Bagagem</label><p>x bagagem</p></div>
+                            <div><label>Tipo Combustível</label><p>tipo</p></div>
+                            <div><label>Franquia</label><p>franquia</p></div>
+                            <div><label>Mudanças</label><p>tipo</p></div>
+                            <div><label>Preço /dia</label><p>x euros</p></div>
+                        </div>
+                        <button class="btn btn-default pull-right">Reservar</button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+        </div>*@
+
+
+<div class="container">
+    <div class="page-header">
+        <h2>Fleet </h2>
+    </div>
+    <div class="frota">
+        <div class="col-md-4">
+            <img style="text-align:center; max-width:350px; height:220px;" src="~/Content/car1.png">
+            <br>
+            <h4>Peugeot 108<br><small> Similares:  Similares </small></h4>
+            <p class="comment"><b></b></p>
+            <h5>Grupo A - Económico</h5>
+            <div>
+                <ul class="features">
+                    <li class="seats" title="Nº de pessoas">    4</li>
+                    <li class="doors" title="Nº de portas">3</li>
+                    <li class="baggage" title="Bagagem">1</li>
+                    <li class="manual" title="Caixa de velocidades">Manual</li>
+                    <li class="fuel" title="Tipo de combustível">Gasolina</li>
+                    <li class="aircon" title="Ar condicionado">Ar condicionado</li>
+                </ul>
+            </div>
+            <div>
+                <b>Desde 16.40 € por dia</b>
+            </div>
+            <div class="button">
+                <button id="button" class="submit" data-toggle="modal" data-target="#formModal" data-fleet="32" data-start-date="2014-06-25" data-end-date="2014-08-31">Reserve já</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img style="text-align:center; max-width:350px; height:220px;" src="~/Content/car2.jpg">
+            <br>
+            <h4>Peugeot 108<br><small> Similares:  Similares </small></h4>
+            <p class="comment"><b></b></p>
+            <h5>Grupo A - Económico</h5>
+            <div>
+                <ul class="features">
+                    <li class="seats" title="Nº de pessoas">4</li>
+                    <li class="doors" title="Nº de portas">3</li>
+                    <li class="baggage" title="Bagagem">1</li>
+                    <li class="manual" title="Caixa de velocidades">Manual</li>
+                    <li class="fuel" title="Tipo de combustível">Gasolina</li>
+                    <li class="aircon" title="Ar condicionado">Ar condicionado</li>
+                </ul>
+            </div>
+            <div>
+                <b>Desde 16.40 € por dia</b>
+            </div>
+            <div class="button">
+                <button id="button" class="submit" data-toggle="modal" data-target="#formModal" data-fleet="32" data-start-date="2014-06-25" data-end-date="2014-08-31">Reserve já</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img style="text-align:center; max-width:350px; height:220px;" src="~/Content/car3.jpg">
+            <br>
+            <h4>Peugeot 108<br><small> Similares:  Similares </small></h4>
+            <p class="comment"><b></b></p>
+            <h5>Grupo A - Económico</h5>
+            <div>
+                <ul class="features">
+                    <li class="seats" title="Nº de pessoas">4</li>
+                    <li class="doors" title="Nº de portas">3</li>
+                    <li class="baggage" title="Bagagem">1</li>
+                    <li class="manual" title="Caixa de velocidades">Manual</li>
+                    <li class="fuel" title="Tipo de combustível">Gasolina</li>
+                    <li class="aircon" title="Ar condicionado">Ar condicionado</li>
+                </ul>
+            </div>
+            <div>
+                <b>Desde 16.40 € por dia</b>
+            </div>
+            <div class="button">
+                <button id="button" class="submit" data-toggle="modal" data-target="#formModal" data-fleet="32" data-start-date="2014-06-25" data-end-date="2014-08-31">Reserve já</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img style="text-align:center; max-width:350px; height:220px;" src="~/Content/car2.jpg">
+            <br>
+            <h4>Peugeot 108<br><small> Similares:  Similares </small></h4>
+            <p class="comment"><b></b></p>
+            <h5>Grupo A - Económico</h5>
+            <div>
+                <ul class="features">
+                    <li class="seats" title="Nº de pessoas">4</li>
+                    <li class="doors" title="Nº de portas">3</li>
+                    <li class="baggage" title="Bagagem">1</li>
+                    <li class="manual" title="Caixa de velocidades">Manual</li>
+                    <li class="fuel" title="Tipo de combustível">Gasolina</li>
+                    <li class="aircon" title="Ar condicionado">Ar condicionado</li>
+                </ul>
+            </div>
+            <div>
+                <b>Desde 16.40 € por dia</b>
+            </div>
+            <div class="button">
+                <button id="button" class="submit" data-toggle="modal" data-target="#formModal" data-fleet="32" data-start-date="2014-06-25" data-end-date="2014-08-31">Reserve já</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img style="text-align:center; max-width:350px; height:220px;" src="~/Content/car4.jpg">
+            <br>
+            <h4>Peugeot 108<br><small> Similares:  Similares </small></h4>
+            <p class="comment"><b></b></p>
+            <h5>Grupo A - Económico</h5>
+            <div>
+                <ul class="features">
+                    <li class="seats" title="Nº de pessoas">4</li>
+                    <li class="doors" title="Nº de portas">3</li>
+                    <li class="baggage" title="Bagagem">1</li>
+                    <li class="manual" title="Caixa de velocidades">Manual</li>
+                    <li class="fuel" title="Tipo de combustível">Gasolina</li>
+                    <li class="aircon" title="Ar condicionado">Ar condicionado</li>
+                </ul>
+            </div>
+            <div>
+                <b>Desde 16.40 € por dia</b>
+            </div>
+            <div class="button">
+                <button id="button" class="submit" data-toggle="modal" data-target="#formModal" data-fleet="32" data-start-date="2014-06-25" data-end-date="2014-08-31">Reserve já</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
