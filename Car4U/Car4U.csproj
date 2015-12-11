@@ -224,6 +224,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AntonioGonçalves.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\car1.png" />
@@ -234,7 +235,16 @@
     <Content Include="Content\Car4ULogo.png" />
     <Content Include="Content\Car4Utext.fw.png" />
     <Content Include="Content\Car4U_ico.fw.ico" />
+    <Content Include="Content\DanielPereira.css" />
+    <Content Include="Content\DiogoCosta.css" />
+    <Content Include="Content\DiogoRamalho.css" />
     <Content Include="Content\frota_icons.png" />
+    <Content Include="Content\LuisRicardo.css" />
+    <Content Include="Content\Maia.css" />
+    <Content Include="Content\Mitch.css" />
+    <Content Include="Content\Osvaldo.css" />
+    <Content Include="Content\PauloP.css" />
+    <Content Include="Content\RicardoOliveira.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
