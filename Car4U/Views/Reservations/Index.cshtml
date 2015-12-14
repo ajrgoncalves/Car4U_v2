@@ -4,48 +4,63 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h3>Reservation</h3>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ReservationDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReturnDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DeliveryDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FinalPrice)
-        </th>
-        <th></th>
+
+    <tr class="text-center">
+        <td class="neon-text">
+            @Html.DisplayName("Nome")
+        </td>
+        <td class="neon-text">
+            @Html.DisplayName("Reservation Date")
+            @*@Html.DisplayNameFor(model => model.ReservationDate)*@
+        </td>
+        <td class="neon-text">
+            @Html.DisplayName(" Return Date")
+            @*@Html.DisplayNameFor(model => model.ReturnDate)*@
+        </td>
+        <td class="neon-text">
+            @Html.DisplayName("Delivery Date")
+            @*@Html.DisplayNameFor(model => model.DeliveryDate)*@
+        </td>
+        <td class="neon-text">
+            @Html.DisplayName("Category")
+        </td>
+        <td class="neon-text">
+            @Html.DisplayName("Final Price")
+            @*@Html.DisplayNameFor(model => model.FinalPrice)*@
+        </td>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReservationDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReturnDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DeliveryDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FinalPrice)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.user)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalPrice)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
 
 </table>

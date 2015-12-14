@@ -19,8 +19,7 @@ namespace Car4U.Controllers
         public ActionResult Index()
         {
             return View(db.Reservations.ToList());
-        }
-
+        }      
         // GET: Reservations/Details/5
         public ActionResult Details(string id)
         {
