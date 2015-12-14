@@ -373,7 +373,6 @@
     <Content Include="Views\Home\Frota_.cshtml" />
     <Content Include="Views\Home\Extras.cshtml" />
     <Content Include="Views\Home\Frota.cshtml" />
-    <Content Include="Views\Reservations\ResevationDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
