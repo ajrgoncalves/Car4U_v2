@@ -5,46 +5,76 @@
 }
 
 <h3>Reservation Details</h3>
+<panel>
+    <table>
+        <div class="col-lg-6 row">
+            <dl>
+                <dt>
+                    @Html.DisplayName("Reservation Number :")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ID)
+                </dd>
+                <dt>
+                    @Html.DisplayName("Name :")
+                </dt>
+                @*<td>
+                        @Html.DisplayFor(model => model.User)
+                    </td>*@
+                <dt>
+                    @Html.DisplayName("Date In :")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DeliveryDate)
+                </dd>
+                <dt>
+                    @Html.DisplayName("Date Out :")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ReturnDate)
+                </dd>
+                <dt>
+                    @Html.DisplayName("Current Category :")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Category)
+                </dd>
 
-<div>
-    <h4>Reservation</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ReservationDate)
-        </dt>
+                <p>
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+            </dl>
+        </div>
+        <div id="edit-details" class="col-lg-6 jumbotron detaildivsize">
+            <form>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReservationDate)
-        </dd>
+                <dt>
+                    @Html.DisplayName("Change delivery Date: ")
+                </dt>
+                <dd>
+                    <input type="date" class="form-control input-size-xs" />
+                </dd>
+                <dt>
+                    @Html.DisplayName("Change return Date: ")
+                </dt>
+                <dd>
+                    <input type="date" class="form-control input-size-xs" />
+                </dd>
+                <dt>
+                    @Html.DisplayName("Change Category: ")
+                </dt>
+                <dd>
+                    <input type="text" class="form-control input-size-xs" />
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReturnDate)
-        </dt>
+                <button class="btn btn-secondary btn-sm subButton">Back</button>
+                <button class="btn btn-secondary btn-sm subButton btnsave">Save Change</button>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReturnDate)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DeliveryDate)
-        </dt>
+            </form>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.DeliveryDate)
-        </dd>
+    </table>
+</panel>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.FinalPrice)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.FinalPrice)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
